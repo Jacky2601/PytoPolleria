@@ -50,4 +50,38 @@ public class GestionUsuario implements UsuarioInterface{
 		return u;
 	}
 
+	@Override
+	public int registrar(Usuario u) {
+		int rs = 0; //0 --> Error
+		
+		//Plantilla
+		Connection con = null;
+		PreparedStatement pst = null;
+		
+		try {
+			con = MySQLConexion8.getConexion();
+			String sql = "insert into tb_usuarios values (?,?,?,?,?,?,default,default)";
+			pst = con.prepareStatement(sql);
+			pst.setInt(1, u.getCodigo());
+			pst.setString(2, u.getNombre());
+			pst.setString(3, u.getApellidoPat());
+			pst.setString(4, u.getApellidoMat());
+			pst.setString(5, u.getUsuario());
+			pst.setString(6, u.getClave());
+			pst.setInt(7, u.getTipo());
+			pst.setInt(8, u.getEstado());
+			
+			//ejecutar 
+			
+			rs = pst.executeUpdate();
+		} catch (Exception e) {
+			System.out.println("Error al registrar : " + e.getMessage());
+			
+		} finally {
+			MySQLConexion8.closeConexion(con);
+		}
+		
+		return rs ;
+	}
+
 }
