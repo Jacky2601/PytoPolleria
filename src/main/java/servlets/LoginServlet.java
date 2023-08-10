@@ -83,7 +83,7 @@ public class LoginServlet extends HttpServlet {
 
 	}
 	
-	private void registrar(HttpServletRequest request, HttpServletResponse response) {
+	private void registrar(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
 		
 		System.out.println("Ingresó al proceso de registrar cuenta...");
 		
