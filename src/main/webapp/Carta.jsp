@@ -3,8 +3,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Pollería Brasas y Sazón</title>
+	<meta charset="UTF-8">
+    <title>Carta</title>
     <link rel="stylesheet" type="text/css" href="css/mis_estilos.css">
 </head>
 <body>
@@ -14,7 +14,6 @@
             <img  class="logo" src="imagenes/BRASA.jpeg"  alt=" ">
             </a>
         </div>
-        
         <div class="search-container">
             <input type="text" class="search" placeholder="Buscar Producto">
         </div>
@@ -22,7 +21,6 @@
             <a href="locales.jsp">
             LOCALES  
                 <img class="location-icon" src="imagenes/ubica.png" alt="">
-                
             </a>
         </div>
         <div class="login-container">
@@ -37,28 +35,45 @@
             </a>
         </div>
     </header>
-    <nav class="navbar">
+    <nav class="navbarra">
         <ul>
-            <li><a href="Carta.jsp">CARTA</a></li>
-            <li><a href="Carta.jsp">PROMOCIONES</a></li>
-            <li><a href="nosotros.jsp">SOBRE NOSOTROS</a></li>
+            <li><a href="">
+            <img class="categoriacat" id="promociones" src="imagenes/VAR1.png" alt="barra de categorias">
+            </a></li>
+            <li><a href="">
+            <img class="categoriacat" id="brasa" src="imagenes/VAR2.png" alt="barra de categorias">
+            </a></li>
+            <li><a href="">
+            <img class="categoriacat" id="parrillas" src="imagenes/VAR3.png" alt="barra de categorias">
+            </a></li>
+            <li><a href="">
+            <img class="categoriacat" id="fcriolla" src="imagenes/VAR4.png" alt="barra de categorias">
+            </a></li>
+            <li><a href="">
+            <img class="categoriacat" id="broaster" src="imagenes/VAR5.png" alt="barra de categorias">
+            </a></li>
+            <li><a href="">
+            <img class="categoriacat" id="hamburguesas" src="imagenes/VAR6.png" alt="barra de categorias">
+            </a></li>
+            <li><a href="">
+            <img class="categoriacat" id="ensaladas" src="imagenes/VAR7.png" alt="barra de categorias">
+            </a></li>
+            <li><a href="">
+            <img class="categoriacat" id="desayunos" src="imagenes/VAR8.png" alt="barra de categorias">
+            </a></li>
         </ul>
     </nav>
-    <section class="panel">
-        <img class="panel-image" id="imgcab" src="imagenes/IMG8.jpg" alt="Panel de Imagen">
-    </section>
     <section class="products-section">
-        <!-- Aquí irá la sección de productos -->
-        <h1 class="indexh1s">NUESTROS POLLOS</h1>
-        <div class="cuadros2">
-    	
-    	<div class="cuadro3">
-    	
-    	<img class="pollo1" id="pollo14" src="imagenes/1-4 POLLO.jpg" alt="producto">
-        <h2 class="texto4">1/4 De Pollo a la Brasa</h2>
-        <p>Nuestro tradicional 1/4 de pollo acompañado de abundantes papas fritas y ensalada personal</p>
+    <!-- Aquí irá la sección de productos -->
+	<div class="cuadros2carta">
+	<br>
+    <!-- Ejemplo de un producto -->
+    <div class="cuadrocarta">
+        <img class="imagenproducto" id="pollo15" src="imagenes/1-4 POLLO.jpg" alt="producto">
+        <h2 class="nombre">1/4 De Pollo a la Brasa</h2>
+        <p class="descripcion">Nuestro tradicional 1/4 de pollo acompañado de abundantes papas fritas y ensalada personal</p>
         <br>
-        <h2 class="texto4">S/.24.90</h2>
+        <h3 class="precio">S/.24.90</h3>
         <div class="buttons">
         	<a href="DetalleProducto.jsp">
         	<button class="buy-button">COMPRAR</button>
@@ -66,47 +81,13 @@
     	</div>
         <br>
     	</div>
-    	
-    	<div class="cuadro3">
-    	
-    	<img class="pollo1" id="pollo14" src="imagenes/1-4 POLLO A LO POBRE.jpg" alt="producto">
-        <h2 class="texto4">1/4 De Pollo a lo Pobre</h2>
-        <p>1/4 Pollo a la brasa + huevo frito + porción de plátano frito + 
-        abundantes papas fritas + ensalada de lechuga, tomate y pepino.</p>
-        <br>
-        <h2 class="texto4">S/.28.90</h2>
-        <div class="buttons">
-        	<a href="DetalleProducto.jsp">
-        	<button class="buy-buttons">COMPRAR</button>
-        	</a>
-    	</div>
-        <br>
-    	</div>
-    	
-    	<div class="cuadro3">
-    	
-    	<img class="pollo1" id="pollo14" src="imagenes/1-4 POLLO ANTICUCHERO.jpg" alt="producto">
-        <h2 class="texto4">1/4 De Pollo Anticuchero</h2>
-        <p>1/4 Pollo a la brasa + anticucho + abundantes papas fritas + ensalada de lechuga, tomate y pepino.</p>
-        <br>
-        <h2 class="texto4">S/.30.90</h2>
-        <div class="buttons">
-        	<a href="DetalleProducto.jsp">
-        	<button class="buy-button">COMPRAR</button>
-        	</a>
-    	</div>
-        <br>
-    	</div>
-    	
-		</div>
-    </section>
+
+    <!-- Repite el bloque anterior para cada producto -->
+	</div>
+	
+	</section>
     
-    <div class="buttons">
-    	<a href="Carta.jsp">
-        <button class="view-more-button">VER MÁS</button>
-        </a>
-    </div>
-    <footer class="footer">
+	<footer class="footer">
         <div class="disclaimer-bar">
             <p class="disclaimer-text">DISFRUTA DEL MEJOR POLLO A LA BRASA CUANDO GUSTES</p>
         </div>
@@ -138,3 +119,4 @@
 </body>
 </html>
 <script src="js/carrusel.js"></script>
+    

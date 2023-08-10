@@ -315,7 +315,6 @@ body {
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
-    
 }
 
 .cuadro1 {
@@ -392,7 +391,7 @@ body {
     color: white;
     padding: 30px;
     text-align: center;
-    font-size: 30px; /* Tamaño de letra 20px */
+    font-size: 50px; /* Tamaño de letra 20px */
 }
 
 .cuadro3 p {
@@ -403,7 +402,7 @@ body {
 .pollo1 {
     width: 90%; /* Ajusta el ancho de la imagen al 100% del cuadro */
     height: 300px; /* Para mantener la proporción de la imagen */
-    margin: 0 20px;
+    margin: 0 20px; /* Centra la imagen horizontalmente */
 }
 
 .buy-buttons {
@@ -417,3 +416,88 @@ body {
     font-family: "Arial", sans-serif; /* Cambiar la fuente a Arial */
     font-size: 20px; /* Tamaño de letra 20px */
 }
+
+
+/* Estilos para la barra de navegación DE LA CARTA */
+.navbarra {
+    background-color: #ff8000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-left: 0px;
+  	position: sticky;
+  	top: 0;
+}
+
+.navbarra ul {
+	
+    list-style: none;
+    display: flex;
+}
+
+.navbarra li {
+    margin: 0 20px;
+}
+
+.navbarra a {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.categoriacat {
+    /* Estilos por defecto de las imágenes */
+    width: 100%;
+    height: auto;
+    transition: filter 0.3s; /* Agrega una transición suave al efecto */
+}
+
+.categoriacat:hover,
+.categoriacat:focus {
+    filter: invert(100%); /* Invierte los colores de la imagen */
+    /*outline: none;  Elimina el contorno de enfoque en el clic */
+    cursor: pointer;
+}
+
+.cuadros2carta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.cuadrocarta {
+    width: 25%; /* Ajusta el ancho según tu diseño */
+    height: 560px; /* Ajusta la altura según tu diseño */
+    margin: 20px 10px;
+    color: black;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 70px;
+}
+
+.cuadrocarta p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.imagenproducto {
+    width: 90%; /* Ajusta el ancho de la imagen al 100% del cuadro */
+    height: 300px; /* Para mantener la proporción de la imagen */
+    margin: 0 20px; /* Centra la imagen horizontalmente */
+}
+
+.nombre {
+    text-align: center; /* Alinear el texto a la izquierda */
+    margin-bottom: 5px; /* Agregar espacio de 20px debajo del párrafo */
+	font-size: 20px; /* Tamaño de letra 20px */
+}
+
+.precio {
+    text-align: center; /* Alinear el texto a la izquierda */
+    margin-bottom: 5px; /* Agregar espacio de 20px debajo del párrafo */
+	font-size: 20px; /* Tamaño de letra 20px */
+}
+

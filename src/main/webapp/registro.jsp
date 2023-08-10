@@ -4,7 +4,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Pollería Brasas y Sazón</title>
+	<title>Registro</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/mis_estilos.css">
 	<style type="text/css"></style>

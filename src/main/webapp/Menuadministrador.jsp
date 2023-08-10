@@ -53,11 +53,8 @@
         <button class="view-more-button2">REPORTE DE PEDIDOS</button>
     	</a>
     </div>
-    
     <br>
     <br>
-    
-    
    	 	<div class="botones3">
    	 	<a href="Index.jsp">
         <button class="view-more-button">SALIR</button>
