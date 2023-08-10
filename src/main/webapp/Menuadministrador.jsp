@@ -1,14 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Pollería Brasas y Sazón</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/mis_estilos.css">
-	<style type="text/css"></style>
-</head>
+	<title>Menu Administrador</title>
+	<link rel="stylesheet" type="text/css" href="css/mis_estilos.css">
+	</head>
 <body>
 	<header class="header">
         <div class="logo-container">
@@ -39,56 +37,33 @@
             </a>
         </div>
     </header>
-
-	<h1 class="usuarioh1">REGISTRAR USUARIO</h1>
-	<div id="login">
-		<div class="formulariologin">
-		
-		<!-- Formulario -->
-		<form action="crudUsu" method="post">
-			<div class="form-group">
-				<label for="inputNombre">Nombre:</label> <input name="txtNombre" class="form-control"
-					id="inputNombre" placeholder="Ingrese su Nombre">
-			</div>
-
-			<div class="form-group">
-				<label for="inputApellidoPaterno">Apellido Paterno:</label> <input name="txtApellidoPat"
-					class="form-control" id="inputApellidoPaterno"
-					placeholder="Ingrese su apellido paterno">
-			</div>
-			
-			<div class="form-group">
-				<label for="inputApellidoMaterno">Apellido Materno:</label> <input name="txtApellidoMat"
-					class="form-control" id="inputApellidoMaterno"
-					placeholder="Ingrese su apellido materno">
-			</div>
-
-			<div class="form-group">
-				<label for="inputUsuario">Usuario:</label> <input type="email" name="txtUsuario"
-					class="form-control" id="inputUsuario"
-					placeholder="Ingrese su correo electrónico">
-			</div>
-
-			<div class="form-group">
-				<label for="inputPassword">Contraseña</label> <input type="password" name="txtPassword"
-					class="form-control" id="inputPassword"
-					placeholder="Ingrese su contraseña">
-			</div>
-			<button name="btnAccion" value="registrar" type="submit" class="btn btn-primary">REGISTRARSE</button>
-		</form>
-		<br>
-		<p>
-			Si ya tiene cuenta, ingrese <a href="login.jsp">aquí</a>
-		</p>
+    <h1 class="usuarioh1">MENU ADMINISTRADOR</h1>
+    <h2 class="texto3">MANTENIMIENTO</h2>
+    
+    <div class="botones3">
+   	 	<a href="crudDistritoDelivery.jsp">
+        <button class="view-more-button2">MANTENIMIENTO DE <br>CARTA</button>
+    	</a>
 	</div>
-	
-	<div class="regreso1">
+    
+    <h2 class="texto3">REPORTES</h2>
+    
+    <div class="botones3">
+	<a href="crudDistritoDelivery.jsp">
+        <button class="view-more-button2">REPORTE DE PEDIDOS</button>
+    	</a>
+    </div>
+    
+    <br>
+    <br>
+    
+    
+   	 	<div class="botones3">
    	 	<a href="Index.jsp">
-        <button class="view-more-button">REGRESAR</button>
+        <button class="view-more-button">SALIR</button>
     	</a>
 		</div>
-		</div>
-
+	
     <footer class="footer">
         <div class="disclaimer-bar">
             <p class="disclaimer-text">DISFRUTA DEL MEJOR POLLO A LA BRASA CUANDO GUSTES</p>
@@ -122,6 +97,3 @@
 </body>
 </html>
 <script src="js/carrusel.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
