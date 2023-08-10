@@ -32,7 +32,7 @@
             </a>
             </div>
         <div class="cart-container">
-            <a href="carrito.html">
+            <a href="CanastaCompras.jsp">
                 <img class="cart-icon" id="r5" src="imagenes/CAR2.png" alt="Carrito de Compras">
             </a>
         </div>
@@ -41,7 +41,7 @@
     <h2 class="texto3">MANTENIMIENTO</h2>
     
     <div class="botones3">
-   	 	<a href="crudDistritoDelivery.jsp">
+   	 	<a href="crudProductos.jsp">
         <button class="view-more-button2">MANTENIMIENTO DE <br>CARTA</button>
     	</a>
 	</div>
