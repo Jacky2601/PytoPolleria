@@ -20,6 +20,7 @@
         <div class="search-container">
             <input type="text" class="search" placeholder="Buscar Producto">
         </div>
+
 		<div class="locations-container">
 			<a href="locales.jsp"> LOCALES <img class="location-icon"
 				src="imagenes/ubica.png" alt="">
@@ -29,20 +30,22 @@
 		<div class="login-container">
 			<c:choose>
 				<c:when test="${empty sessionScope.usuario}">
-					<a href="login.jsp"> INGRESA O REGÕSTRATE <img
+					<a href="login.jsp"> INGRESA O REG√çSTRATE <img
 						class="login-icon" src="imagenes/user.png"
 						alt="Ingresar o Registrarse">
 					</a>
 				</c:when>
 				<c:otherwise>
 					<p>Bienvenido, ${sessionScope.usuario.nombre}</p>
-					<a href="cerrarSesionServlet">Cerrar sesiÛn</a>
+					<a href="cerrarSesionServlet">Cerrar sesi√≥n</a>
 				</c:otherwise>
 			</c:choose>
 		</div>
 		
 		<div class="cart-container">
             <a href="carrito.html">
+
+
                 <img class="cart-icon" id="r5" src="imagenes/CAR2.png" alt="Carrito de Compras">
             </a>
         </div>
@@ -60,11 +63,11 @@
 					placeholder="Ingrese su correo" value="">
 			</div>
 			<div class="form-group">
-				<label for="inputPassword">ContraseÒa</label> <input type="password"
+				<label for="inputPassword">Contrase√±a</label> <input type="password"
 					name="txtPassword" class="form-control" id="inputPassword"
-					placeholder="Ingrese su contraseÒa" maxlength="8"
-					pattern="[a-zA-Z·ÈÌÛ˙¡…Õ”⁄0-9]{8}" value="">
-				<!-- Usamos maxlength y pattern son para controlar la cantidad y las condiciones respectivamente para la contraseÒa -->
+					placeholder="Ingrese su contrase√±a" maxlength="8"
+					pattern="[a-zA-Z√°√©√≠√≥√∫√Å√â√ç√ì√ö0-9]{8}" value="">
+				<!-- Usamos maxlength y pattern son para controlar la cantidad y las condiciones respectivamente para la contrase√±a -->
 			</div>
 
 			<button name="btnAccion" value="login" type="submit" class="btn btn-primary">INGRESAR</button>
@@ -72,7 +75,7 @@
 		<br>
 		
 		<p>
-			Para registrar su cuenta, pulse <a href="registro.jsp">aquÌ</a>
+			Para registrar su cuenta, pulse <a href="registro.jsp">aqu√≠</a>
 		</p>
 		
 		<!-- Muestra el atributo (variable) enviado desde el servlet -->
@@ -97,15 +100,15 @@
         	</a>
     	</div>
     	<div class="contact-bar">
-        	<p class="contact-text">CONT¡CTANOS</p>
-        	<p class="contact-info">AtenciÛn Delivery: Lima 12:00 pm. a 10:00 pm.</p>
+        	<p class="contact-text">CONT√ÅCTANOS</p>
+        	<p class="contact-info">Atenci√≥n Delivery: Lima 12:00 pm. a 10:00 pm.</p>
         	<p class="contact-info">Central Lima: (01) 500 2551</p>
         	<p class="contact-info">Email: atencionalcliente@brasasysabor.com.pe</p>
     	</div>
 		</div>
 
         <p>
-           SÕGUENOS EN<br/></p>
+           S√çGUENOS EN<br/></p>
            <div class="redes">
                 <a href="https://www.facebook.com/" target="_blank"><img id="r1" src="imagenes/fb.png" alt="" /></a>
                 <a href="https://www.instagram.com/" target="_blank"><img id="r2" src="imagenes/ig.png" alt="" /></a>
@@ -113,7 +116,7 @@
                 <a href="https://www.youtube.com/" target="_blank"><img id="r4" src="imagenes/yt.png" alt="" /></a>
             </div>
            <p> 
-           © 2023 BrasasySabor.com.pe - Todos los derechos reservados</br>
+           ¬© 2023 BrasasySabor.com.pe - Todos los derechos reservados</br>
         </p>
     </footer>
 </body>
