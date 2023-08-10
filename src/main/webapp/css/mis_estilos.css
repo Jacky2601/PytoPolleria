@@ -1,9 +1,8 @@
-@charset "ISO-8859-1";
 
 #login {
 	margin-left: 25%;
 	width: 50%;
-	margin-top: 10%;
+	margin-top: 2%;
 }
 
 #login>h1 {
@@ -15,3 +14,406 @@
 	width: 50%;
 	margin-top: 5%;
 } 
+
+
+/* Estilos para la cabecera */
+.header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 1px;
+}
+
+.logo {
+    height: 100px;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.search-container {
+    margin-left: 100px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    padding: 15px 70px; /* Ajusta el padding para hacer el elemento más ancho */
+    border: 3px solid #ccc;
+    border-radius: 20px;
+}
+
+/* Estilos para los enlaces */
+.locations-container a,
+.login-container a,
+.cart-container a {
+    text-decoration: none;
+    color: black; /* Opcional: establecer color de texto negro para los enlaces */
+}
+
+/* Resto de estilos que ya tenías */
+.locations-container,
+.login-container,
+.cart-container {
+    margin-left: auto;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    font-family: "Arial", sans-serif; /* Cambiar la fuente a Arial */
+    font-size: 20px; /* Tamaño de letra 20px */
+}
+
+.location-icon,
+.login-icon {
+    height: 30px;
+    width: auto;
+    margin-right: 7px;
+}
+
+.cart-icon{
+	height: 50px;
+    width: auto;
+    margin-right: 20px;
+}
+
+body {
+	font-family: "Arial black", sans-serif;
+	width: 100%;
+	background-color: #0e0e0e;
+	background-repeat: no-repeat;
+	background-size: cover;
+    padding: 0px;
+    margin: 0px;
+	
+}
+
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #ff8040;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-left: 0px;
+  	position: sticky;
+  	top: 0;
+}
+
+.navbar ul {
+	
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+/* Estilos para el panel de imagen */
+.panel {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.panel-image {
+    width: 100%;
+    max-height: 400px;
+}
+
+/* Estilos para la sección de productos */
+.products-section {
+    /* Agrega aquí los estilos para la sección de productos */
+}
+
+/* Estilos para el panel de producto */
+.product-panel {
+    /* Agrega aquí los estilos para el panel de producto */
+}
+
+/* Estilos para los botones */
+.buttons {
+    text-align: center;
+    margin: 20px 0;
+    
+}
+
+.buy-button, .view-more-button {
+    padding: 10px 20px;
+    background-color: #b81f1f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    font-family: "Arial", sans-serif; /* Cambiar la fuente a Arial */
+    font-size: 20px; /* Tamaño de letra 20px */
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #f5c725;
+    padding: 0px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    padding: 10px;
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    align-items: center;
+    font-family: "Arial", sans-serif; /* Cambiar la fuente a Arial */
+    font-size: 20px; /* Tamaño de letra 20px */
+}
+
+.logofooter{
+	height: 180px;
+    width: auto;
+    margin-right: 20px;
+}
+
+.disclaimer-bar {
+    background-color: #606060;
+    color: white;
+    padding: 15px;
+    font-family: "Arial Black", sans-serif; /* Cambiar la fuente a Arial */
+    font-size: 20px; /* Tamaño de letra 20px */
+}
+
+.disclaimer-text {
+    margin: 1px;
+}
+
+.contact-bar {
+    margin-top: 10px;
+}
+
+.contact-text {
+    font-weight: bold;
+    margin: 0;
+}
+
+.contact-info {
+    margin: 5px 0;
+}
+
+.social-media-bar {
+    margin-top: 10px;
+}
+
+.redes {
+	padding: 0px 0px;
+	display: inline;
+	left: 35%;
+}
+
+
+#r1{
+    width: 50px;
+    height: 50px;
+    position: relative;
+   
+}
+#r2{
+    width: 50px;
+    height: 50px;
+    position: relative;
+   
+    
+}
+#r3{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    
+    
+}
+#r4{
+    width: 50px;
+    height: 50px;
+    position: relative;
+     
+}
+
+/*AQUI ESTAN LOS DEL LOGIN*/
+
+.formulariologin {
+    background-color: white;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos adicionales para el contenido del formulario, como etiquetas, campos de entrada, botones, etc. */
+.grupito {
+    margin-bottom: 10px;
+}
+
+.btn {
+    /* Estilos para los botones (puedes ajustarlos según sea necesario) */
+    padding: 10px 20px;
+    border-radius: 10px;
+    
+}
+
+.usuarioh1 {
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+
+.regreso1{
+	padding: 10px 40px;
+    border-radius: 5px;
+    position: relative;
+    text-align: right;
+    margin: 50px 0;
+    color: white;
+    
+}
+
+.texto2 {
+    color: white; /* Cambiar el color del texto a blanco */
+    text-align: left; /* Alinear el texto a la izquierda */
+    margin-left: 150px; /* Ajustar el margen izquierdo para separar del borde */
+    margin-bottom: 20px; /* Agregar espacio de 20px debajo del párrafo */
+}
+
+.parrafo1 {
+    color: white; /* Cambiar el color del texto a blanco */
+    text-align: justify; /* Justificar el texto */
+    margin: 30px 150px; /* Agregar un margen superior e inferior y ajustar el margen izquierdo */
+    font-size: 20px; /* Tamaño de letra 20px */
+    margin-bottom: 50px; /* Agregar espacio de 20px debajo del párrafo */
+}
+
+.regreso2{
+	padding: 30px 150px;
+    border-radius: 5px;
+    position: relative;
+    text-align: right;
+    margin: 50px 0;
+    color: white;
+    
+}
+
+.linea1 {
+    border: 1px solid white;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.cuadros2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    
+}
+
+.cuadro1 {
+    margin: 0 10px;
+    color: black;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 70px;
+}
+
+.cuadro1 p {
+    margin: 5px 0;
+}
+
+.texto3 {
+    color: white; /* Cambiar el color del texto a blanco */
+    text-align: center; /* Alinear el texto a la izquierda */
+    margin-bottom: 20px; /* Agregar espacio de 20px debajo del párrafo */
+}
+
+.botones3{
+	padding: 20px 50px;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+    margin: 30px 0px;
+    color: white;
+}
+
+.view-more-button2 {
+    padding: 15px 50px;
+    background-color: #b81f1f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Arial", sans-serif; /* Cambiar la fuente a Arial */
+    font-size: 20px; /* Tamaño de letra 20px */
+}
+
+.regreso3{
+	padding: 30px 150px;
+    border-radius: 5px;
+    position: relative;
+    text-align: right;
+    margin: 50px 200px;
+    color: white;
+    
+}
+
+
+/*AQUI ESTAN PRODUCTOS INDEX*/
+
+.texto4 {
+    text-align: center; /* Alinear el texto a la izquierda */
+    margin-bottom: 5px; /* Agregar espacio de 20px debajo del párrafo */
+}
+
+.cuadro3 {
+    width: 25%; /* Ajusta el ancho según tu diseño */
+    height: 560px; /* Ajusta la altura según tu diseño */
+    margin: 0 10px;
+    color: black;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 70px;
+}
+
+.indexh1s {
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px; /* Tamaño de letra 20px */
+}
+
+.cuadro3 p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.pollo1 {
+    width: 90%; /* Ajusta el ancho de la imagen al 100% del cuadro */
+    height: 300px; /* Para mantener la proporción de la imagen */
+    margin: 0 20px;
+}
+
+.buy-buttons {
+    padding: 10px 20px;
+    background-color: #b81f1f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 10px;
+    font-family: "Arial", sans-serif; /* Cambiar la fuente a Arial */
+    font-size: 20px; /* Tamaño de letra 20px */
+}

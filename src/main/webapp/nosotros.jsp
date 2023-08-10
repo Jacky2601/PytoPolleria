@@ -1,14 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Pollería Brasas y Sazón</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/mis_estilos.css">
-	<style type="text/css"></style>
-</head>
+	<title>Sobre Nosotros</title>
+	<link rel="stylesheet" type="text/css" href="css/mis_estilos.css">
+	</head>
 <body>
 	<header class="header">
         <div class="logo-container">
@@ -39,56 +37,38 @@
             </a>
         </div>
     </header>
-
-	<h1 class="usuarioh1">REGISTRAR USUARIO</h1>
-	<div id="login">
-		<div class="formulariologin">
-		
-		<!-- Formulario -->
-		<form action="crudUsu" method="post">
-			<div class="form-group">
-				<label for="inputNombre">Nombre:</label> <input name="txtNombre" class="form-control"
-					id="inputNombre" placeholder="Ingrese su Nombre">
-			</div>
-
-			<div class="form-group">
-				<label for="inputApellidoPaterno">Apellido Paterno:</label> <input name="txtApellidoPat"
-					class="form-control" id="inputApellidoPaterno"
-					placeholder="Ingrese su apellido paterno">
-			</div>
-			
-			<div class="form-group">
-				<label for="inputApellidoMaterno">Apellido Materno:</label> <input name="txtApellidoMat"
-					class="form-control" id="inputApellidoMaterno"
-					placeholder="Ingrese su apellido materno">
-			</div>
-
-			<div class="form-group">
-				<label for="inputUsuario">Usuario:</label> <input type="email" name="txtUsuario"
-					class="form-control" id="inputUsuario"
-					placeholder="Ingrese su correo electrónico">
-			</div>
-
-			<div class="form-group">
-				<label for="inputPassword">Contraseña</label> <input type="password" name="txtPassword"
-					class="form-control" id="inputPassword"
-					placeholder="Ingrese su contraseña">
-			</div>
-			<button name="btnAccion" value="registrar" type="submit" class="btn btn-primary">REGISTRARSE</button>
-		</form>
-		<br>
-		<p>
-			Si ya tiene cuenta, ingrese <a href="login.jsp">aquí</a>
-		</p>
-	</div>
-	
-	<div class="regreso1">
+    <h1 class="usuarioh1">SOBRE NOSOTROS</h1>
+    <h2 class="texto2">Visión</h2>
+    <p class="parrafo1">En Brasas y Sazón, nuestra visión es convertirnos en la pollería
+     de referencia en el mercado de venta de pollos a la brasa en línea, reconocidos por 
+     nuestro sazón único y auténtico. Aspiramos a ser la opción preferida de nuestros 
+     clientes, brindándoles una experiencia de compra excepcional, con un servicio de 
+     calidad, sabores deliciosos y opciones de personalización que superen sus expectativas. 
+     Nuestra visión es ser sinónimo de sabor, comodidad y excelencia en la entrega de productos, 
+     destacándonos como una marca de confianza y satisfacción para todos aquellos que disfrutan de un 
+     auténtico pollo a la brasa.
+    </p>
+    
+    <h2 class="texto2">Misión</h2>
+    <p class="parrafo1">En Brasas y Sazón, nuestra misión es deleitar los paladares 
+    de nuestros clientes con auténticos pollos a la brasa preparados con el sazón y 
+    dedicación que nos caracteriza. Nos comprometemos a ofrecer un sistema de pedidos 
+    en línea fácil y seguro, donde los clientes puedan personalizar sus pedidos y 
+    recibirlos en la comodidad de sus hogares. Nuestro equipo se esforzará por brindar 
+    un servicio excepcional y eficiente, garantizando la frescura y calidad de nuestros 
+    productos en cada entrega. A través de la innovación constante, prácticas sostenibles 
+    y un enfoque en la satisfacción del cliente, buscamos consolidar a Brasas y Sazón como 
+    la mejor opción para aquellos que buscan disfrutar de la deliciosa y tradicional experiencia 
+    de un pollo a la brasa.
+    </p>
+    
+    
+   	 	<div class="regreso2">
    	 	<a href="Index.jsp">
         <button class="view-more-button">REGRESAR</button>
     	</a>
 		</div>
-		</div>
-
+	
     <footer class="footer">
         <div class="disclaimer-bar">
             <p class="disclaimer-text">DISFRUTA DEL MEJOR POLLO A LA BRASA CUANDO GUSTES</p>
@@ -122,6 +102,3 @@
 </body>
 </html>
 <script src="js/carrusel.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
