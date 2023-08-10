@@ -30,7 +30,7 @@
             </a>
             </div>
         <div class="cart-container">
-            <a href="carrito.html">
+            <a href="CanastaCompras.jsp">
                 <img class="cart-icon" id="r5" src="imagenes/CAR2.png" alt="Carrito de Compras">
             </a>
         </div>
@@ -38,27 +38,45 @@
     
     <section class="products-section">
     <!-- Aquí irá la sección de productos -->
-	<div class="cuadros2carta">
+	<div class="cuadros3carta">
 	<br>
     <!-- Ejemplo de un producto -->
-    <div class="cuadrocarta">
-        <img class="imagenproducto" id="pollo15" src="imagenes/1-4 POLLO.jpg" alt="producto">
-        <h2 class="nombre">1/4 De Pollo a la Brasa</h2>
-        <p class="descripcion">Nuestro tradicional 1/4 de pollo acompañado de abundantes papas fritas y ensalada personal</p>
+    <div class="cuadrocarta3">
+    	
+        <img class="imagenproducto3" id="pollo15" src="imagenes/1-4 POLLO.jpg" alt="producto">
+        <div class="cuadrito3">
+        <h2 class="nombre3">1/4 De Pollo a la Brasa</h2>
+        <p class="descripcion3">Nuestro tradicional 1/4 de pollo acompañado de abundantes papas fritas y ensalada personal</p>
         <br>
-        <h3 class="precio">S/.24.90</h3>
-        <div class="buttons">
+        <h3 class="precio3" id="precio1">S/.<span id="precio">24.90</span></h3>
+        <br>
+        <div>
+        <p>Cantidad:</p>
+        <button class="buttons3" id="decrement">-</button>
+        <input class="cant3" type="text" id="quantity" value="0">
+        <button class="buttons3" id="increment">+</button>
+    	</div>
+    	<p>SubTotal: <span id="total">0</span></p>
+        
+        <div class="buttons3">
         	<a href="DetalleProducto.jsp">
-        	<button class="buy-button">COMPRAR</button>
+        	<button class="buy-button">AGREGAR A LA CANASTA</button>
         	</a>
     	</div>
         <br>
     	</div>
+    	</div>
 
-    <!-- Repite el bloque anterior para cada producto -->
+    <!-- Se modifica de acuerdo al producto selecionado -->
 	</div>
 	
 	</section>
+    
+    <div class="regreso2">
+   	 	<a href="Index.jsp">
+        <button class="view-more-button">REGRESAR</button>
+    	</a>
+		</div>
     
 	<footer class="footer">
         <div class="disclaimer-bar">

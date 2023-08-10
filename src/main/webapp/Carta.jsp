@@ -30,7 +30,7 @@
             </a>
             </div>
         <div class="cart-container">
-            <a href="carrito.html">
+            <a href="CanastaCompras.jsp">
                 <img class="cart-icon" id="r5" src="imagenes/CAR2.png" alt="Carrito de Compras">
             </a>
         </div>
@@ -63,6 +63,8 @@
             </a></li>
         </ul>
     </nav>
+    
+    
     <section class="products-section">
     <!-- Aquí irá la sección de productos -->
 	<div class="cuadros2carta">

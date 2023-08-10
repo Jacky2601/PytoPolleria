@@ -69,3 +69,35 @@ document.getElementById("r3").setAttribute("onclick", "twit(this)");
 document.getElementById("r4").setAttribute("onclick", "yt(this)");
 
 
+
+/sumando cantidad detalle/
+const decrementButton = document.getElementById("decrement");
+const incrementButton = document.getElementById("increment");
+const quantityInput = document.getElementById("quantity");
+const totalSpan = document.getElementById("total");
+const precioSpan = document.getElementById("precio"); // Cambia "precio" a "precioSpan"
+
+let quantity = 0;
+const precio = parseFloat(precioSpan.textContent); // Convierte el texto del precio a número
+
+decrementButton.addEventListener("click", () => {
+    if (quantity > 0) {
+        quantity--;
+        updateQuantityAndTotal();
+    }
+});
+
+incrementButton.addEventListener("click", () => {
+    quantity++;
+    updateQuantityAndTotal();
+});
+
+function updateQuantityAndTotal() {
+    quantityInput.value = quantity;
+    totalSpan.textContent = (precio * quantity).toFixed(2);
+}
+
+
+
+
+

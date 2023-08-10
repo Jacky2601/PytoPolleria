@@ -32,7 +32,7 @@
             </a>
             </div>
         <div class="cart-container">
-            <a href="carrito.html">
+            <a href="CanastaCompras.jsp">
                 <img class="cart-icon" id="r5" src="imagenes/CAR2.png" alt="Carrito de Compras">
             </a>
         </div>
