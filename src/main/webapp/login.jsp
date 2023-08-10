@@ -20,20 +20,28 @@
         <div class="search-container">
             <input type="text" class="search" placeholder="Buscar Producto">
         </div>
-        <div class="locations-container">
-            <a href="locales.jsp">
-            LOCALES  
-                <img class="location-icon" src="imagenes/ubica.png" alt="">
-                
-            </a>
-        </div>
-        <div class="login-container">
-            <a href="login.jsp">
-            INGRESA O REGÍSTRATE  
-                <img class="login-icon" src="imagenes/user.png" alt="Ingresar o Registrarse">
-            </a>
-            </div>
-        <div class="cart-container">
+		<div class="locations-container">
+			<a href="locales.jsp"> LOCALES <img class="location-icon"
+				src="imagenes/ubica.png" alt="">
+
+			</a>
+		</div>
+		<div class="login-container">
+			<c:choose>
+				<c:when test="${empty sessionScope.usuario}">
+					<a href="login.jsp"> INGRESA O REGÍSTRATE <img
+						class="login-icon" src="imagenes/user.png"
+						alt="Ingresar o Registrarse">
+					</a>
+				</c:when>
+				<c:otherwise>
+					<p>Bienvenido, ${sessionScope.usuario.nombre}</p>
+					<a href="cerrarSesionServlet">Cerrar sesión</a>
+				</c:otherwise>
+			</c:choose>
+		</div>
+		
+		<div class="cart-container">
             <a href="carrito.html">
                 <img class="cart-icon" id="r5" src="imagenes/CAR2.png" alt="Carrito de Compras">
             </a>
