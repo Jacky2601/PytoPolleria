@@ -37,6 +37,7 @@
             </a>
         </div>
     </header>
+    
     <h1 class="usuarioh1">MENU ADMINISTRADOR</h1>
     <h2 class="texto3">MANTENIMIENTO</h2>
     
@@ -49,7 +50,7 @@
     <h2 class="texto3">REPORTES</h2>
     
     <div class="botones3">
-	<a href="crudDistritoDelivery.jsp">
+		<a href="ReportePedidos.jsp">
         <button class="view-more-button2">REPORTE DE PEDIDOS</button>
     	</a>
     </div>

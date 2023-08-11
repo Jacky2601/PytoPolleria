@@ -18,6 +18,8 @@ function carrusel() {
 }
 document.body.setAttribute("onload","carrusel()");
 
+
+
 function redespost(e){
      e.style.transition="all 0.5s";
      e.style.transform="scale(1.5,1.5)";
@@ -69,13 +71,13 @@ document.getElementById("r3").setAttribute("onclick", "twit(this)");
 document.getElementById("r4").setAttribute("onclick", "yt(this)");
 
 
-
 /sumando cantidad detalle/
 const decrementButton = document.getElementById("decrement");
 const incrementButton = document.getElementById("increment");
 const quantityInput = document.getElementById("quantity");
-const totalSpan = document.getElementById("total");
+const totalSpan = document.getElementById("subtotal");
 const precioSpan = document.getElementById("precio"); // Cambia "precio" a "precioSpan"
+const totalSpan2 = document.getElementById("subtotal2");
 
 let quantity = 0;
 const precio = parseFloat(precioSpan.textContent); // Convierte el texto del precio a número
@@ -96,6 +98,12 @@ function updateQuantityAndTotal() {
     quantityInput.value = quantity;
     totalSpan.textContent = (precio * quantity).toFixed(2);
 }
+
+
+
+
+
+
 
 
 
