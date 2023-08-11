@@ -1,10 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
-    <title>Canasta Compras</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle Producto</title>
     <link rel="stylesheet" type="text/css" href="css/mis_estilos.css">
 </head>
 <body>
@@ -30,31 +31,59 @@
             </a>
             </div>
         <div class="cart-container">
-            <a href="CanastaCompras.jsp">
-                <img class="cart-icon" id="r5" src="imagenes/CAR2.png" alt="Carrito de Compras">
+            <a href="">
+                <img type="button"class="cart-icon" id="r5" src="imagenes/CAR2.png" alt="Carrito de Compras">
             </a>
         </div>
     </header>
-    
+   
     <section class="products-section">
     <!-- Aquí irá la sección de productos -->
-	<div class="cuadros3carta">
-	<br>
+	<div class="cuadros4canasta">
     <!-- Ejemplo de un producto -->
-    <div class="cuadrocarta3">
+    <div class="cuadrocanasta4">
     	
-        
-        <div class="cuadrito3">
-        <h2 class="nombre3">CANASTA DE COMPRAS EN PROCESO </h2>
-        
+        <img class="imagenproducto4" id="pollo15" src="imagenes/1-4 POLLO.jpg" alt="producto">
+        <div class="cuadrito4">
+        	<h2 class="nombre4">1/4 De Pollo a la Brasa</h2>
+        	<h3 class="precio4" id="precio1">S/.<span id="precio">24.90</span></h3>
+        <div class= "bloque4">
+        <p>Cantidad:</p>
+        <div class= "bloque41">
+        <button class="buttons4" id="decrement">-</button>
+        <input class="cant4" type="text" id="quantity" value="1">
+        <button class="buttons4" id="increment">+</button>
+        </div>
+        </div>
+        <p>SubTotal: S/. <span id="subtotal">0</span></p>
+    	
+        <div>
+        	<a href="">
+        	<button class="buy-button4">ELIMINAR</button>
+        	</a>
+    	</div>
         <br>
     	</div>
     	</div>
-
     <!-- Se modifica de acuerdo al producto selecionado -->
 	</div>
-	
+
 	</section>
+   <hr class="linea14">
+   
+    <div class="totalcanasta">
+        <p>SubTotal: S/. <span id="subtotal2">0</span></p>
+    </div>
+   
+   
+    <div class="buttonscana">
+    	<a href="Pedido.jsp">
+        <button class="view-more-button14">REALIZAR PEDIDO</button>
+        </a>
+        <a href="Carta.jsp">
+        <button class="view-more-button14">SEGUIR COMPRANDO</button>
+        </a>
+    </div>
     
     <div class="regreso2">
    	 	<a href="Index.jsp">

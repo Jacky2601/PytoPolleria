@@ -5,8 +5,10 @@
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle Producto</title>
+    <title>Reporte Pedidos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/mis_estilos.css">
+    <style type="text/css"></style>
 </head>
 <body>
     <header class="header">
@@ -36,48 +38,66 @@
             </a>
         </div>
     </header>
-    
-    <section class="products-section">
-    <!-- Aquí irá la sección de productos -->
-	<div class="cuadros3carta">
-	<br>
-    <!-- Ejemplo de un producto -->
-    <div class="cuadrocarta3">
-    	
-        <img class="imagenproducto3" id="pollo15" src="imagenes/1-4 POLLO.jpg" alt="producto">
-        <div class="cuadrito3">
-        <h2 class="nombre3">1/4 De Pollo a la Brasa</h2>
-        <p class="descripcion3">Nuestro tradicional 1/4 de pollo acompañado de abundantes papas fritas y ensalada personal</p>
-        <br>
-        <h3 class="precio3" id="precio1">S/.<span id="precio">24.90</span></h3>
-        <br>
-        <div>
-        <p>Cantidad:</p>
-        <button class="buttons3" id="decrement">-</button>
-        <input class="cant3" type="text" id="quantity" value="1">
-        <button class="buttons3" id="increment">+</button>
-    	</div>
-    	<p>SubTotal: S/. <span id="subtotal">0</span></p>
-        
-        <div class="buttons3">
-        	<a href="DetalleProducto.jsp">
-        	<button class="buy-button">AÑADIR A LA CANASTA</button>
-        	</a>
-    	</div>
-        <br>
-    	</div>
-    	</div>
-
-    <!-- Se modifica de acuerdo al producto selecionado -->
-	</div>
-	
-	</section>
-    
-    <div class="regreso2">
-   	 	<a href="Index.jsp">
+    <div id="reporte">
+		<div class="partereporte">
+		
+		<h2>REPORTE DE PEDIDOS</h2>
+            <div class="fechas">
+                <label for="desde">DESDE:</label>
+                <input type="date" id="desde">
+                <label for="hasta">HASTA:</label>
+                <input type="date" id="hasta">
+            </div>
+            <div class="botonesrep">
+            	<a href="">
+                <button class="botonesreporte" id="consultar">CONSULTAR</button>
+                </a>
+                <a href="">
+                <button class="botonesreporte" id="imprimir">IMPRIMIR PDF</button>
+                </a>
+            </div>
+            
+            <div class="container mt-3">
+			            
+			  <table class="table table-hover">
+			    <thead>
+			      <tr>
+			        <th>Firstname</th>
+			        <th>Lastname</th>
+			        <th>Email</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <td>John</td>
+			        <td>Doe</td>
+			        <td>john@example.com</td>
+			      </tr>
+			      <tr>
+			        <td>Mary</td>
+			        <td>Moe</td>
+			        <td>mary@example.com</td>
+			      </tr>
+			      <tr>
+			        <td>July</td>
+			        <td>Dooley</td>
+			        <td>july@example.com</td>
+			      </tr>
+			    </tbody>
+			  </table>
+			</div>
+            
+            <!--table-->
+                <!-- Tu tabla de reporte aquí -->
+            <!--/table-->
+        </div></div>
+		
+     
+    <div class="regreso3">
+   	 	<a href="Menuadministrador.jsp">
         <button class="view-more-button">REGRESAR</button>
     	</a>
-		</div>
+	</div>
     
 	<footer class="footer">
         <div class="disclaimer-bar">
@@ -111,5 +131,4 @@
 </body>
 </html>
 <script src="js/carrusel.js"></script>
-
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>

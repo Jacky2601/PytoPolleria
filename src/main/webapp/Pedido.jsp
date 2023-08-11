@@ -5,7 +5,7 @@
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle Producto</title>
+    <title>Pedido</title>
     <link rel="stylesheet" type="text/css" href="css/mis_estilos.css">
 </head>
 <body>
@@ -37,47 +37,69 @@
         </div>
     </header>
     
-    <section class="products-section">
-    <!-- Aquí irá la sección de productos -->
-	<div class="cuadros3carta">
-	<br>
-    <!-- Ejemplo de un producto -->
-    <div class="cuadrocarta3">
-    	
-        <img class="imagenproducto3" id="pollo15" src="imagenes/1-4 POLLO.jpg" alt="producto">
-        <div class="cuadrito3">
-        <h2 class="nombre3">1/4 De Pollo a la Brasa</h2>
-        <p class="descripcion3">Nuestro tradicional 1/4 de pollo acompañado de abundantes papas fritas y ensalada personal</p>
-        <br>
-        <h3 class="precio3" id="precio1">S/.<span id="precio">24.90</span></h3>
-        <br>
-        <div>
-        <p>Cantidad:</p>
-        <button class="buttons3" id="decrement">-</button>
-        <input class="cant3" type="text" id="quantity" value="1">
-        <button class="buttons3" id="increment">+</button>
-    	</div>
-    	<p>SubTotal: S/. <span id="subtotal">0</span></p>
-        
-        <div class="buttons3">
-        	<a href="DetalleProducto.jsp">
-        	<button class="buy-button">AÑADIR A LA CANASTA</button>
-        	</a>
-    	</div>
-        <br>
-    	</div>
-    	</div>
+     <div class="pedido-container">
+        <div class="pedido-header">
+            <h1 class="pedido-title">DETALLE DE PEDIDO</h1>
+        </div>
 
-    <!-- Se modifica de acuerdo al producto selecionado -->
-	</div>
-	
-	</section>
+        <div class="pedido-form">
+            <div class="form-column">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                <label for="nombre">Celular:</label>
+                <input type="text" id="celular" name="celular" placeholder="Celular">
+                <label for="nombre">Observaciones:</label>
+                <input type="text" id="observaciones" name="observaciones" placeholder="Observaciones">
+            </div>
+            <div class="form-column">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+                <label for="apellido">DNI:</label>
+                <input type="text" id="dni" name="dni" placeholder="DNI">
+                <label for="apellido">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Direccion">
+            </div>
+            <!-- Otros campos de entrada aquí -->
+        </div>
+
+        <div class="metodo-pago">
+            <p>Método de pago:</p>
+            <label><input type="radio" name="metodoPago" value="POS">POS</label>
+            <label><input type="radio" name="metodoPago" value="EFECTIVO">EFECTIVO</label>
+        </div>
+
+        <div class="metodo-entrega">
+            <p>Método de entrega:</p>
+            <label><input type="radio" name="metodoEntrega" value="DELIVERY">Delivery</label>
+            <label><input type="radio" name="metodoEntrega" value="RETIRO">Retiro en Tienda</label>
+        </div>
+
+        <div class="resumen-pedido">
+            <h2 class="resumen-title">Resumen de pedido:</h2>
+            
+            <!-- Cuadro de detalles del pedido aquí -->
+            
+        </div>
+
+        <div class="resumen-total">
+            <p>Subtotal: S/. <span id="subtotal">0</span></p>
+            <p>Delivery: S/. <span id="delivery">0</span></p>
+            <p>Total: S/. <span id="total">0</span></p>
+        </div>
+
+        <div class="pedido-buttons">
+        	<a href="Pedido.jsp">
+            <button class="pedido-button">REALIZAR PEDIDO</button>
+            </a>
+            <a href="CanastaCompras.jsp">
+            <button class="pedido-button">REGRESAR ATRÁS</button>
+            </a>
+            <a href="Index.jsp">
+            <button class="pedido-button">CANCELAR</button>
+            </a>
+        </div>
+    </div>
     
-    <div class="regreso2">
-   	 	<a href="Index.jsp">
-        <button class="view-more-button">REGRESAR</button>
-    	</a>
-		</div>
     
 	<footer class="footer">
         <div class="disclaimer-bar">
@@ -111,5 +133,3 @@
 </body>
 </html>
 <script src="js/carrusel.js"></script>
-
-
