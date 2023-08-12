@@ -956,6 +956,27 @@ th, td {
     text-align: left;
 }*/
 
+#mante {
+    margin: 0 auto; /* Ajusta el margen  */
+    width:90%; /* Ajusta el ancho según sea necesario */
+    margin-top: 2%; /*Ajusta el ancho según sea necesario */
+    justify-content: center;
+}
+
+
+#mante>h1 {
+	text-align: center;
+}
+
+
+
+.partemante {
+    background-color: white;
+    padding: 10px; /* Agrega un padding para crear espacio alrededor del contenido */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    justify-content: center;
+}
 
 
 
