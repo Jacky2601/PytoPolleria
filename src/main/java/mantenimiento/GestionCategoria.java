@@ -35,7 +35,6 @@ public class GestionCategoria implements CategoriaInterface{
 				
 				c.setIdcategoria(rs.getInt(1));
 				c.setNombreCategoria(rs.getString(2));
-				c.setEstado(rs.getInt(3));
 				
 				lista.add(c);
 			}

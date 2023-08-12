@@ -4,23 +4,15 @@ public class Categoria {
 	
 	private int idcategoria;
 	private String nombreCategoria;
-	private int estado;
 	
-	
-	@Override
-	public String toString() {
-		return "Categoria [idcategoria=" + idcategoria + ", nombreCategoria=" + nombreCategoria + ", estado=" + estado
-				+ "]";
-	}
 
 	public Categoria() {
 		
 	}
 
-	public Categoria(int idcategoria, String nombreCategoria, int estado) {
+	public Categoria(int idcategoria, String nombreCategoria) {
 		this.idcategoria = idcategoria;
 		this.nombreCategoria = nombreCategoria;
-		this.estado = estado;
 	}
 
 	public int getIdcategoria() {
@@ -39,13 +31,5 @@ public class Categoria {
 		this.nombreCategoria = nombreCategoria;
 	}
 
-	public int getEstado() {
-		return estado;
-	}
-
-	public void setEstado(int estado) {
-		this.estado = estado;
-	}
-		
 
 }
