@@ -5,6 +5,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import mantenimiento.GestionUsuario;
 import model.Usuario;
 import java.io.IOException;
@@ -13,7 +14,7 @@ import java.io.IOException;
  * Servlet implementation class LoginServlet
  */
 
-@WebServlet(name = "crudUsu", description = "Controlador para el usuario", urlPatterns = { "/crudUsu" })
+@WebServlet(name = "crudUsu", description = "Controlador para el usuario", urlPatterns = { "/crudUsu" }) 
 
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -37,20 +38,29 @@ public class LoginServlet extends HttpServlet {
 		System.out.println("Opcion seleccionada en el boton: " + accion);
 
 		switch (accion) {
-		case "registrar":
-			registrar(request, response);
-			break;
 		case "login":
 			login(request, response);
 			break;
+		case "registrar":
+			registrar(request, response);
+			break;
+			
+		case "logout":
+			logout(request, response);
+			break;
 
 		default:
+			
 			break;
 		}
 	}
 	
-	private void login(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+	private void logout(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		request.getSession().invalidate();	
+		response.sendRedirect("login.jsp");
+	}
 
+	private void login(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException { 
 		System.out.println("Entro a la opcion Login...");
 
 		String usuario, password;
@@ -68,8 +78,16 @@ public class LoginServlet extends HttpServlet {
 			
 			request.getSession().setAttribute("u", u); // el atributo esta a nivel de sesion
 			
-			request.getRequestDispatcher("principal.jsp").forward(request, response);
+			// Configura el tipo de usuario en función del rol
+			if (u.getTipo() == 2) {
+			    u.setTipo(2); // Cliente
+			    request.getRequestDispatcher("Index.jsp").forward(request, response);
+			} else if (u.getTipo() == 1) {
+			    u.setTipo(1); // Administrador
+			    request.getRequestDispatcher("Menuadministrador.jsp").forward(request, response);
+			}
 		
+					
 
 	    } else {
 			System.out.println("Usuario o clave incorrecto");
@@ -84,17 +102,62 @@ public class LoginServlet extends HttpServlet {
 	}
 	
 	private void registrar(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
-		
 		System.out.println("Ingresó al proceso de registrar cuenta...");
 		
+		String nombre, apellidoPat, apellidoMat, usuario, password; 
+		
 		// Para los datos del registro de cuenta
-		String nombre = request.getParameter("txtNombre");
-		String apellidoPat = request.getParameter("txtApellidoPat");
-		String apellidoMat = request.getParameter("txtApellidoMat");
-		String usuario = request.getParameter("txtUsuario");
-		String password = request.getParameter("txtPassword");
+		nombre = request.getParameter("txtNombre");
+		apellidoPat = request.getParameter("txtApellidoPat");
+		apellidoMat = request.getParameter("txtApellidoMat");
+		usuario = request.getParameter("txtUsuario");
+		password = request.getParameter("txtPassword");
+		
+		if (nombre == null || apellidoPat == null || apellidoMat == null || usuario == null || password == null) {
+	        // Manejar el error o redireccionar a una página de error
+	        response.sendRedirect("registro.jsp");
+	        return;
+	    }
+		
+		GestionUsuario gu = new GestionUsuario();
+		Usuario u = new Usuario();
+		 	u.setNombre(nombre);
+		    u.setApellidoPat(apellidoPat);
+		    u.setApellidoMat(apellidoMat);
+		    u.setUsuario(usuario);
+		    u.setClave(password);
+		    
+		    int resultadoRegistro = gu.registrar(u);
+		    
+		    if (resultadoRegistro > 0) {
+		        // Registro exitoso, redirigir a una página de éxito o mostrar un mensaje de éxito.
+		    	boolean registroExitoso = true;
+		    	request.getSession().setAttribute("registroExitoso", registroExitoso);
+		    	response.sendRedirect("Index.jsp");
+		    } else {
+		        // Ocurrió un error durante el registro, mostrar un mensaje de error.
+		    	 request.getSession().setAttribute("mensaje", "<div class='alert alert-danger' role='alert'>\r\n"
+							+ "  Error durante el registro!!!\r\n" + "</div>");	
+		    }
 
 		System.out.println(nombre + " " + apellidoPat + " " + apellidoMat + " " + usuario + " " + password);
+		
+		}
+		
+		/**
+		 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+		 */
+		protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+			// TODO Auto-generated method stub
+			response.getWriter().append("Served at: ").append(request.getContextPath());
+		}
+
+		/**
+		 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+		 */
+		protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+			// TODO Auto-generated method stub
+			doGet(request, response);
 		
 	}
 

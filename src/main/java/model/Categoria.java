@@ -5,13 +5,12 @@ public class Categoria {
 	private int idcategoria;
 	private String nombreCategoria;
 	
-	
 
 	public Categoria() {
 		
 	}
 
-	public Categoria(int idcategoria, String nombreCategoria, int estado) {
+	public Categoria(int idcategoria, String nombreCategoria) {
 		this.idcategoria = idcategoria;
 		this.nombreCategoria = nombreCategoria;
 	}
@@ -31,6 +30,6 @@ public class Categoria {
 	public void setNombreCategoria(String nombreCategoria) {
 		this.nombreCategoria = nombreCategoria;
 	}
-		
+
 
 }
